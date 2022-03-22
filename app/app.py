@@ -178,8 +178,8 @@ def vis():
    S += '<a href="http://localhost:8000/">Back!</a> <br>'
    S += "      <ul>\n"
    for (title, link, image_description) in test_table():
-      S += f"""<div> {title} <br> <br><br>\n"""
-      S += f"""<img src="{link}" alt="{title}" width="500">\n"""
+      S += f"""<div> {title} </div>\n"""
+      S += f"""<img src="{link}" alt="{title}" width="500"<br> <br><br>\n"""
    return S
 
 @app.route('/addform')
